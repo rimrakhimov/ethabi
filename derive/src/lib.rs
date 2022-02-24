@@ -17,10 +17,10 @@ mod function;
 
 use ethabi::{Contract, Param, ParamType, Result};
 use heck::SnakeCase;
+use proc_macro2::Span;
 use quote::quote;
 use std::path::PathBuf;
 use std::{env, fs};
-use syn::export::Span;
 
 const ERROR_MSG: &str = "`derive(EthabiContract)` failed";
 
